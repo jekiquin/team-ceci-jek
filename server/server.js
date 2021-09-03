@@ -7,6 +7,10 @@ const PORT = process.env.PORT || 6969;
 
 app.use(cors())
 
+const story = require('./routes/storyRoute.js')
+
+app.use('/story', story)
+
 
 app.listen(PORT, () => {
     console.log(`Port listening at http://localhost:${PORT}.`);
