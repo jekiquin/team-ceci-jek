@@ -8,7 +8,12 @@ router.get('/', (req, res) => {
    res.status(200).json(story)
 })
 
-router.get('/:id', (req, res) => {
+router.get('/story', (req,res) => {
+    const story = readData();
+    res.status(200).json(story[0]);
+})
+
+router.get('/story/:id', (req, res) => {
     const story = readData();
     const storyLineId = req.params.id;
     const storyLineFound = story.find(storyLine => storyLine.id === storyLineId);

@@ -9,7 +9,7 @@ app.use(cors())
 
 const story = require('./routes/storyRoute.js')
 
-app.use('/story', story)
+app.use('/', story)
 
 
 app.listen(PORT, () => {
