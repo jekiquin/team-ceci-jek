@@ -9,7 +9,7 @@
                 "toNextId": "2gchskt4q9e89",
                 "description": "Change into his suit.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/undies.png"
             },
             {
                 "toNextId": "2gchskt4q9e8a",
@@ -35,7 +35,7 @@
     },
     {
         "id": "2gchskt4q9e89",
-        "storyline": "Jojo changes into his suit and realizes that there’s a white stain on his pants. He has no time to clean it up and all of his clothes are in the laundry. ",
+        "storyline": "Jojo changes into his suit and realizes that there’s stains on his pants. He has no time to clean it up and all of his clothes are in the laundry. ",
         "isEnd": false,
         "isDead": false,
         "options": [
@@ -43,13 +43,13 @@
                 "toNextId": "2gchskt4q9e8b",
                 "description": "Untuck his shirt.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/dirtypants.png"
             },
             {
                 "toNextId": "2gchskt4q9e8c",
                 "description": "Leave as is.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/dirtypants.png"
             }
         ]
     },
@@ -69,7 +69,7 @@
                 "toNextId": "2gchskt4q9e8c",
                 "description": "Wear a mask.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/toothbrush.png"
             }
         ]
     },
@@ -134,7 +134,7 @@
                 "toNextId": "2gchskt4q9e8g",
                 "description": "Lock his front door and run past the cat.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/cat.png"
             },
             {
                 "toNextId": "2gchskt4q9e8h",
@@ -176,7 +176,7 @@
                 "toNextId": "2gchskt4q9e8j",
                 "description": "Dodge the zebra as it runs past him.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/zebra.png"
             }
         ]
     },
@@ -204,9 +204,9 @@
         "options": [
             {
                 "toNextId": "2gchskt4q9e8k",
-                "description": "Run through the crowd. F*** them kids.",
+                "description": "Run through the crowd.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/children.png"
             },
             {
                 "toNextId": "2gchskt4q9e8l",
@@ -242,7 +242,7 @@
                 "toNextId": "2gchskt4q9e8m",
                 "description": "Grab another kid and use him as a shield.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/icekweem.png"
             },
             {
                 "toNextId": "2gchskt4q9e8n",
@@ -284,7 +284,7 @@
                 "toNextId": "2gchskt4q9e8p",
                 "description": "Pretend he doesn’t speak english.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/crazyex.png"
             }
         ]
     },
@@ -312,7 +312,7 @@
         "options": [
             {
                 "toNextId": "2gchskt4q9e8q",
-                "description": "Go into a strip club.",
+                "description": "Go into a library.",
                 "isEnd": true,
                 "image": ""
             },
@@ -320,13 +320,13 @@
                 "toNextId": "2gchskt4q9e8r",
                 "description": "Steal a bike.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/books.png"
             }
         ]
     },
     {
         "id": "2gchskt4q9e8q",
-        "storyline": "Jojo falls in love and forgets about his job. Jojo dies.",
+        "storyline": "Jojo falls in love with the librarian and forgets about his job. Jojo dies.",
 
         "isEnd": true,
         "isDead": true,
@@ -350,7 +350,7 @@
                 "toNextId": "2gchskt4q9e8s",
                 "description": "Take the stairs",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/elevator.png"
             },
             {
                 "toNextId": "2gchskt4q9e8t",
@@ -419,7 +419,7 @@
         "options": [
             {
                 "toNextId": "2gchskt4q9e88",
-                "description": "Why not do it again?!?",
+                "description": "Why not do it again?!",
                 "isEnd": true,
                 "image": ""
             }
