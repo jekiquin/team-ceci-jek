@@ -1,8 +1,11 @@
 .story-container{
     padding: 1rem;
     &__storyline {
-        border: 1px solid;
+        border: 1px solid black;
         padding: 1rem;
+        color: black;
+        background-color: white;
+        border-radius: 6px;
     }
 
     &__option {
@@ -13,5 +16,17 @@
         outline: 1px solid;
         padding: 1rem;
         margin: 1rem;
+        border-radius: 6px;
+
+        &:hover {
+            color: white;
+            background-color: black;
+            border-color: white;
+        }
     }
+
+    &__heading {
+        text-align: center;
+    }
+
 }

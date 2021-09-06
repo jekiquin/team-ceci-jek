@@ -9,6 +9,7 @@
     background-position-y: bottom;
     background-size: cover;
     margin: 2rem 0;
+    border-radius: 6px;
     
     &--run {
         animation: city 2s linear forwards 1s;
@@ -23,16 +24,12 @@
         background-image: url("http://localhost:6969/images/klipartz.com.png");
         background-position: 0px 8%; 
 
-        // &--standing {
-        //     animation: stand-cycle 1s steps(5) infinite;
-        // }
         
         &--run {
             animation: 
                         walk-cycle 1s steps(6) 1s forwards, 
                         jump-cycle 1s steps(5) 2.2s forwards, 
                         jump 1s forwards 2.2s;
-            // animation-play-state: paused,  running, running, running;
         }
 
     }

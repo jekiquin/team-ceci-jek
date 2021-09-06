@@ -51,7 +51,7 @@ class StoryPage extends Component {
     render() {
         const {storyLine} = this.state;
        return !storyLine ? <h1>Loading...</h1> : 
-        ( <div className="story-container">
+        ( <main className="story-container">
             <h1 className="story-container__heading">Jojo's Adventure</h1>
             <Animation image={this.state.animationImage} animate={this.state.animationRun}/>
             <div className="story-container__storyline">
@@ -59,7 +59,7 @@ class StoryPage extends Component {
                 <p className="story-container__text">What should Jojo do?</p>
                 {this.optionsLink()}
             </div>
-        </div> )
+        </main> )
     }
 
 }
