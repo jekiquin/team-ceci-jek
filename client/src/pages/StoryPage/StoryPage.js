@@ -7,7 +7,8 @@ import Animation from '../../components/Animation/Animation';
 class StoryPage extends Component {
     state = {
         storyLine: null,
-        displayStoryLine: '',
+        isDead: false,
+        isEnd: false,
         animationRun: false,
         animationImage: null
     }
@@ -26,7 +27,7 @@ class StoryPage extends Component {
             storyCalls.nextStory(storyId)
                 .then((res) => {
                     setTimeout(() => {
-                        this.setState({storyLine: res.data, animationRun: false, animationImage: null})
+                        this.setState({storyLine: res.data, isDead: res.data.isDead, isEnd: res.data.isEnd, animationRun: false, animationImage: null})
                     }, timeOut)
                     
                 })
@@ -35,10 +36,9 @@ class StoryPage extends Component {
     }
 
     handleClick = (option) => {
-        console.log(option);
         this.setState({
             animationRun: !option.isEnd,
-            animationImage: option.image
+            animationImage: option.image,
         })
     }
 
@@ -54,10 +54,10 @@ class StoryPage extends Component {
         return !storyLine ? <h1>Loading...</h1> : 
             ( <main className="story-container">
                 <h1 className="story-container__heading">Jojo's Adventure</h1>
-                <Animation image={this.state.animationImage} animate={this.state.animationRun}/>
+                <Animation image={this.state.animationImage} animate={this.state.animationRun} isDead={this.state.isDead} isEnd={this.state.isEnd}/>
                 <div className="story-container__storyline">
                     <p className="story-container__text">{storyLine.storyline}</p>
-                    <p className="story-container__text">What should Jojo do?</p>
+                    <p className="story-container__text">What should Jojo do next?</p>
                     {this.optionsLink()}
                 </div>
             </main> )
