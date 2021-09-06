@@ -58,9 +58,14 @@ class StoryPage extends Component {
                 <h1 className="story-container__heading">Jojo's Adventure</h1>
                 <Animation image={this.state.animationImage} animate={this.state.animationRun} isDead={this.state.isDead} isEnd={this.state.isEnd}/>
                 <div className={`story-container__storyline  ${storylineHide}`}>
-                    <p className="story-container__text">{storyLine.storyline}</p>
-                    <p className="story-container__text">What should Jojo do next?</p>
-                    {this.optionsLink()}
+                    <div className="story-container__text-container">
+                        <p className="story-container__text">{storyLine.storyline}</p>
+                        <p className="story-container__text story-container__question">What should Jojo do next?</p>
+                    </div>
+                    <div>
+                        {this.optionsLink()}
+                    </div>
+  
                 </div>
             </main> )
     }
