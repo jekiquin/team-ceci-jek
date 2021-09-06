@@ -3,7 +3,7 @@ import './Animation.scss';
 function Animation(props) {
     const {image, animate} = props;
     // image = image || 'http://localhost:6969/images/boss.png';
-    console.log(image);
+    // console.log(image);
 
     const animateEnv = animate ? 'animation--run' : '';
     let animateJojo = animate ? 'animation__jojo--run' : 'animation__jojo--standing';
