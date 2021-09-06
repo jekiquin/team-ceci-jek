@@ -52,6 +52,7 @@ class StoryPage extends Component {
     render() {
         const {storyLine, animationRun} = this.state;
         const storylineHide = animationRun ? 'story-container__storyline--hide' : '';
+        
         return !storyLine ? <h1>Loading...</h1> : 
             ( <main className="story-container">
                 <h1 className="story-container__heading">Jojo's Adventure</h1>

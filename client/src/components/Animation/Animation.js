@@ -15,7 +15,12 @@ function Animation(props) {
 
     return(
         <div className={`animation ${animateEnv}`}>
-            <h1 className='animation__overmessage'>{overMessage}</h1>
+            <div className='animation__message-container'>
+                <h1 className='animation__overmessage'>{overMessage}</h1>
+                <h1 className='animation__overmessage'>{overMessage}</h1>
+                <h1 className='animation__overmessage'>{overMessage}</h1>
+            </div>
+            
             <div className={`animation__jojo ${animateJojo}`}>
             </div>
             <div className={`animation__obstruction ${animateObstruction}`}>
