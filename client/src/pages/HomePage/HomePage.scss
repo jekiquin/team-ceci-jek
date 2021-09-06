@@ -1,4 +1,6 @@
+@use '../../partial-styles/animation' as *;
 @use '../../partial-styles/variables' as *;
+@use '../../partial-styles/placeholders' as *;
 
 .homepage{
     display:flex;
@@ -6,7 +8,14 @@
     flex-direction: column;
 
     &__heading {
-        margin: 10rem 0;
+        margin-top: 10rem;
+        color: red;
+    }
+
+    &__jojo {
+        @extend %jojo;
+        margin: 5rem 0;
+        animation: stand-cycle 1s steps(5) infinite;
     }
 
     &__start {

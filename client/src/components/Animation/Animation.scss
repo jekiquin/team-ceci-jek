@@ -1,5 +1,6 @@
 @use '../../partial-styles/animation' as *;
 @use '../../partial-styles/variables' as *;
+@use '../../partial-styles/placeholders' as *;
 
 .animation {
     width: 100%;
@@ -44,13 +45,8 @@
     }
 
     &__jojo {
-        width: 8.125rem;
-        height: 108px;
+        @extend %jojo;
         position: absolute;
-        right: 30%;
-        bottom: 0;
-        background-image: url("http://localhost:6969/images/klipartz.com.png");
-        background-position: 0px 8%; 
 
         
         &--run {
