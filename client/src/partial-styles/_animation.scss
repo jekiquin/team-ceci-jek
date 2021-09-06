@@ -25,6 +25,15 @@
 	}
 }
 
+@keyframes punch-cycle {
+	from {
+		background-position: 0px 100%; 
+	}
+	to {
+		background-position: -45rem 100%;
+	}
+}
+
 
 @keyframes jump {
     0% {
@@ -45,6 +54,19 @@
     to {
         transform: translateX(calc(100vw + 8rem));
     }
+}
+
+@keyframes object-punch {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(75vw - 8rem));
+    }
+	100% {
+		transform: translateX(0);
+	}
+
 }
 
 @keyframes city {

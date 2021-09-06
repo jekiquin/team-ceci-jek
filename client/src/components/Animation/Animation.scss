@@ -19,17 +19,21 @@
         width: 8.125rem;
         height: 108px;
         position: absolute;
-        right: 30vw;
+        right: 30%;
         bottom: 0;
         background-image: url("http://localhost:6969/images/klipartz.com.png");
         background-position: 0px 8%; 
 
         
         &--run {
-            animation: 
-                        walk-cycle 1s steps(6) 1s forwards, 
-                        jump-cycle 1s steps(5) 2.2s forwards, 
-                        jump 1s forwards 2.2s;
+            animation: walk-cycle 1s steps(6) 1s 2 forwards, 
+                        jump-cycle 1s steps(5) 2.45s forwards, 
+                        jump 1s forwards 2.45s;
+        }
+
+        &--punch {
+            animation: walk-cycle 1s steps(6) 1s 2 forwards,
+                        punch-cycle 0.3s steps(5) 3.1s forwards;
         }
 
     }
@@ -42,7 +46,11 @@
         left: -8rem;
 
         &--run {
-            animation: object-run 1.5s forwards 2s;
+            animation: object-run 2.5s forwards 2s;
+        }
+
+        &--punch {
+            animation: object-punch 2.5s linear alternate 2s;
         }
         
 

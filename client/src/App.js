@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <Link class="homenav" to='/'>Home</Link>
+        <Link className="homenav" to='/'>Home</Link>
         <Switch>
           <Route path='/' exact component={HomePage} />
           <Route path='/story' exact component={StoryPage} />

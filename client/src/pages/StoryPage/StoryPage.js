@@ -21,12 +21,13 @@ class StoryPage extends Component {
 
     componentDidUpdate(prevProps) {
         const storyId = this.props.match.params && this.props.match.params.storyId;
+        const timeOut = this.state.animationRun ? 4000 : 0;
         if (storyId !== prevProps.match.params.storyId) {
             storyCalls.nextStory(storyId)
                 .then((res) => {
                     setTimeout(() => {
                         this.setState({storyLine: res.data, animationRun: false, animationImage: null})
-                    }, 4000)
+                    }, timeOut)
                     
                 })
         }
@@ -34,7 +35,7 @@ class StoryPage extends Component {
     }
 
     handleClick = (option) => {
-        console.log(option)
+        console.log(option);
         this.setState({
             animationRun: !option.isEnd,
             animationImage: option.image
@@ -50,16 +51,16 @@ class StoryPage extends Component {
 
     render() {
         const {storyLine} = this.state;
-       return !storyLine ? <h1>Loading...</h1> : 
-        ( <main className="story-container">
-            <h1 className="story-container__heading">Jojo's Adventure</h1>
-            <Animation image={this.state.animationImage} animate={this.state.animationRun}/>
-            <div className="story-container__storyline">
-                <p className="story-container__text">{storyLine.storyline}</p>
-                <p className="story-container__text">What should Jojo do?</p>
-                {this.optionsLink()}
-            </div>
-        </main> )
+        return !storyLine ? <h1>Loading...</h1> : 
+            ( <main className="story-container">
+                <h1 className="story-container__heading">Jojo's Adventure</h1>
+                <Animation image={this.state.animationImage} animate={this.state.animationRun}/>
+                <div className="story-container__storyline">
+                    <p className="story-container__text">{storyLine.storyline}</p>
+                    <p className="story-container__text">What should Jojo do?</p>
+                    {this.optionsLink()}
+                </div>
+            </main> )
     }
 
 }

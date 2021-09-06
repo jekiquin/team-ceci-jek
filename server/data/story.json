@@ -390,9 +390,9 @@
             },
             {
                 "toNextId": "2gchskt4q9e8v",
-                "description": "Tell him he’s not feeling well.",
+                "description": "Tell him you're not feeling well.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/boss.png"
             }
         ]
     },

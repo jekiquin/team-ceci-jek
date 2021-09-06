@@ -1,5 +1,42 @@
+@use '../../partial-styles/variables' as *;
+
 .homepage{
     display:flex;
     align-items: center;
     flex-direction: column;
+
+    &__heading {
+        margin: 10rem 0;
+    }
+
+    &__start {
+        $button: &;
+
+        border: 1px solid $secondary-color;
+        padding: 1rem;
+        border-radius: 6px;
+        margin-top: 3rem;
+        position: relative;
+        width: 20rem;
+        text-align: center;
+
+        &-seriously {
+            display: none;
+        }
+
+        &:hover {
+            color: $accent-color;
+            border-color: $secondary-color;
+            background-color: $main-color;
+            #{$button} {
+                &-button{
+                    display: none;
+                }
+
+                &-seriously {
+                    display: block;
+                }
+            }
+        }
+    }
 }
