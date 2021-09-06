@@ -1,12 +1,16 @@
 import './Animation.scss';
 
 function Animation(props) {
+    const {image, animate} = props;
+
+    const animateStr = animate ? '--run' : '';
+    const animateJojo = animate ? 'animation__jojo--run' : 'animation__jojo--standing'
     return(
-        <div className="animation">
-            <div className="animation__jojo">
+        <div className={`animation animation${animateStr}`}>
+            <div className={`animation__jojo ${animateJojo}`}>
             </div>
-            <div className="animation__obstruction">
-                <img className="animation__obstruction-img" src={props.image} alt="" />
+            <div className={`animation__obstruction animation__obstruction${animateStr}`}>
+                <img className="animation__obstruction-img" src={image} alt="" />
             </div>
         </div>
     )

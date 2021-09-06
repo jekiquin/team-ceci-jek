@@ -98,7 +98,7 @@
                 "toNextId": "2gchskt4q9e8e",
                 "description": "Run out of the house.",
                 "isEnd": false,
-                "image": ""
+                "image": "http://localhost:6969/images/coffeepot.png"
             },
             {
                 "toNextId": "2gchskt4q9e8f",

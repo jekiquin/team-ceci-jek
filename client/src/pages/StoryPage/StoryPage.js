@@ -7,7 +7,9 @@ import Animation from '../../components/Animation/Animation';
 class StoryPage extends Component {
     state = {
         storyLine: null,
-        displayStoryLine: ''
+        displayStoryLine: '',
+        animationRun: false,
+        animationImage: null
     }
 
     componentDidMount() {
@@ -18,19 +20,31 @@ class StoryPage extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        setTimeout(() => {
-            const storyId = this.props.match.params && this.props.match.params.storyId;
-            if (storyId !== prevProps.match.params.storyId) {
-             storyCalls.nextStory(storyId).then((res) => {this.setState({storyLine: res.data})})
-            }
-        }, 3000)
+        const storyId = this.props.match.params && this.props.match.params.storyId;
+        if (storyId !== prevProps.match.params.storyId) {
+            storyCalls.nextStory(storyId)
+                .then((res) => {
+                    setTimeout(() => {
+                        this.setState({storyLine: res.data, animationRun: false, animationImage: null})
+                    }, 4000)
+                    
+                })
+        }
 
+    }
+
+    handleClick = (option) => {
+        console.log(option)
+        this.setState({
+            animationRun: !option.isEnd,
+            animationImage: option.image
+        })
     }
 
     optionsLink = () => {
         const options = this.state.storyLine.options;
         return options.map(option => 
-            <Link className="story-container__option" key={option.toNextId} to={`/story/${option.toNextId}`}>{option.description}</Link>
+            <Link onClick={() => this.handleClick(option)} className="story-container__option" key={option.toNextId} to={`/story/${option.toNextId}`}>{option.description}</Link>
         )
     }
 
@@ -39,7 +53,7 @@ class StoryPage extends Component {
        return !storyLine ? <h1>Loading...</h1> : 
         ( <div className="story-container">
             <h1 className="story-container__heading">Jojo's Adventure</h1>
-            <Animation />
+            <Animation image={this.state.animationImage} animate={this.state.animationRun}/>
             <div className="story-container__storyline">
                 <p className="story-container__text">{storyLine.storyline}</p>
                 <p className="story-container__text">What should Jojo do?</p>

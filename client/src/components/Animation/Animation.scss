@@ -8,8 +8,11 @@
     background-image: url("http://localhost:6969/images/city.png");
     background-position-y: bottom;
     background-size: cover;
-    animation: city 2s linear forwards 1s;
     margin: 2rem 0;
+    
+    &--run {
+        animation: city 2s linear forwards 1s;
+    }
 
     &__jojo {
         width: 8.125rem;
@@ -18,22 +21,33 @@
         right: 30vw;
         bottom: 0;
         background-image: url("http://localhost:6969/images/klipartz.com.png");
-        animation: stand-cycle 1s steps(5) forwards, 
-                    walk-cycle 1s steps(6) 1s forwards, 
-                    jump-cycle 1s steps(5) 2.2s forwards, 
-                    jump 1s forwards 2.2s, 
-                    stand-cycle 1s steps(5) infinite 3.2s; 
+        background-position: 0px 8%; 
+
+        // &--standing {
+        //     animation: stand-cycle 1s steps(5) infinite;
+        // }
+        
+        &--run {
+            animation: 
+                        walk-cycle 1s steps(6) 1s forwards, 
+                        jump-cycle 1s steps(5) 2.2s forwards, 
+                        jump 1s forwards 2.2s;
+            // animation-play-state: paused,  running, running, running;
+        }
+
     }
 
     &__obstruction {
         width: 8rem;
         height: 7rem;
-        // background-size: cover;
-        // background-size: 100% 100%;
         position: absolute;
         bottom: 0;
         left: -8rem;
-        animation: object-run 1.5s forwards 2s;
+
+        &--run {
+            animation: object-run 1.5s forwards 2s;
+        }
+        
 
         &-img {
             width: 100%;
