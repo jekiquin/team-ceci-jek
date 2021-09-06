@@ -4,11 +4,10 @@ const cors = require('cors');
 
 require('dotenv').config();
 const PORT = process.env.PORT || 6969;
+const story = require('./routes/storyRoute.js');
 
 app.use(cors())
-
-const story = require('./routes/storyRoute.js')
-
+app.use(express.static('public'));
 app.use('/', story)
 
 

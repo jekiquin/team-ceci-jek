@@ -1,0 +1,17 @@
+.story-container{
+    padding: 1rem;
+    &__storyline {
+        border: 1px solid;
+        padding: 1rem;
+    }
+
+    &__option {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        border: 1px solid;
+        outline: 1px solid;
+        padding: 1rem;
+        margin: 1rem;
+    }
+}

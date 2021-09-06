@@ -1,0 +1,57 @@
+@keyframes walk-cycle{
+    from {
+		background-position: 0px 72%; 
+	}
+	to {
+		background-position: -54rem 72%;
+	}
+}
+
+@keyframes jump-cycle{
+    from {
+		background-position: 0px 34%; 
+	}
+	to {
+		background-position: -45rem 34%;
+	}
+}
+
+@keyframes stand-cycle{
+    from {
+		background-position: 0px 8%; 
+	}
+	to {
+		background-position: -45rem 8%;
+	}
+}
+
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-9.375rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes object-run {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(100vw + 8rem));
+    }
+}
+
+@keyframes city {
+    to {
+		background-position: 0px bottom; 
+	}
+	from {
+		background-position: -1300px bottom;
+	}
+}
