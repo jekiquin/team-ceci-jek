@@ -10,7 +10,7 @@ function Animation(props) {
     animateJojo = image?.includes('boss') ? 'animation__jojo--punch' : animateJojo;
     let animateObstruction = animate ? 'animation__obstruction--run' : '';
     animateObstruction = image?.includes('boss') ? 'animation__obstruction--punch' : animateObstruction;
-    let overMessage = isEnd ? (isDead ? 'GAME OVER!' : 'WINNER!!!!') : ''
+    let overMessage = isEnd ? (isDead ? 'GAME OVER!' : 'WINNER!!!!') : '';
     
 
     return(

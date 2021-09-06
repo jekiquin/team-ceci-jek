@@ -50,12 +50,13 @@ class StoryPage extends Component {
     }
 
     render() {
-        const {storyLine} = this.state;
+        const {storyLine, animationRun} = this.state;
+        const storylineHide = animationRun ? 'story-container__storyline--hide' : '';
         return !storyLine ? <h1>Loading...</h1> : 
             ( <main className="story-container">
                 <h1 className="story-container__heading">Jojo's Adventure</h1>
                 <Animation image={this.state.animationImage} animate={this.state.animationRun} isDead={this.state.isDead} isEnd={this.state.isEnd}/>
-                <div className="story-container__storyline">
+                <div className={`story-container__storyline  ${storylineHide}`}>
                     <p className="story-container__text">{storyLine.storyline}</p>
                     <p className="story-container__text">What should Jojo do next?</p>
                     {this.optionsLink()}
