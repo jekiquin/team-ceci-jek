@@ -13,12 +13,17 @@ class StoryPage extends Component {
         animationImage: null
     }
 
-    audio = new Audio('http://localhost:6969/audio/Electronic_Fantasy.mp3');
-
+    background = new Audio('http://localhost:6969/audio/Electronic_Fantasy.mp3');
+    buttonSound = new Audio('http://localhost:6969/audio/mixkit-arcade-game-jump-coin-216.wav');
+    gameWin = new Audio('http://localhost:6969/audio/mixkit-video-game-win-2016.wav');
+    gameOver = new Audio('http://localhost:6969/audio/mixkit-retro-arcade-game-over-470.wav')
+    
     componentDidMount() {
-        this.audio.play();
-        this.audio.volume = 0.005;
-        this.audio.loop = true;
+        this.background.play();
+        this.background.volume = 0.005;
+        this.gameWin.volume = 0.01;
+        this.gameOver.volume = 0.01;
+        this.background.loop = true;
 
         const storyId = this.props.match.params && this.props.match.params.storyId;
         storyId
@@ -38,19 +43,35 @@ class StoryPage extends Component {
                     }, timeOut)
                     
                 })
-            : storyCalls.startStory().then((res) => {this.setState({storyLine: res.data, isDead: res.data.isDead, isEnd: res.data.isEnd, animationRun: false, animationImage: null})});
+            : storyCalls.startStory().then((res) => {
+                this.setState({storyLine: res.data, isDead: res.data.isDead, isEnd: res.data.isEnd, animationRun: false, animationImage: null})
+            });
+        }
+
+        const {isEnd, isDead} = this.state;
+        if (isEnd) {
+            this.background.pause();
+            isDead ? this.gameOver.play() : this.gameWin.play();
+        } else {
+            this.background.play();
+            this.gameOver.pause();
+            this.gameWin.pause();
         }
 
     }
 
     componentWillUnmount() {
-        this.audio.pause();
+        this.background.pause();
     }
 
     handleClick = (option) => {
+        this.buttonSound.play();
+        this.buttonSound.volume = 0.1;
         this.setState({
             animationRun: !option.isEnd,
             animationImage: option.image,
+        }, () => {
+            setTimeout(() => this.buttonSound.pause(), 200);
         })
     }
 
