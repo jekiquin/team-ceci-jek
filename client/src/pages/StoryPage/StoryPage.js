@@ -24,13 +24,15 @@ class StoryPage extends Component {
         const storyId = this.props.match.params && this.props.match.params.storyId;
         const timeOut = this.state.animationRun ? 4000 : 0;
         if (storyId !== prevProps.match.params.storyId) {
-            storyCalls.nextStory(storyId)
+            storyId
+            ? storyCalls.nextStory(storyId)
                 .then((res) => {
                     setTimeout(() => {
                         this.setState({storyLine: res.data, isDead: res.data.isDead, isEnd: res.data.isEnd, animationRun: false, animationImage: null})
                     }, timeOut)
                     
                 })
+            : storyCalls.startStory().then((res) => {this.setState({storyLine: res.data, isDead: res.data.isDead, isEnd: res.data.isEnd, animationRun: false, animationImage: null})});
         }
 
     }
