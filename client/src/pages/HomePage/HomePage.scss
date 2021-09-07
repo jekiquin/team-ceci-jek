@@ -8,7 +8,7 @@
     flex-direction: column;
 
     &__heading {
-        margin-top: 10rem;
+        margin-top: 5rem;
         color: red;
     }
 
@@ -47,5 +47,11 @@
                 }
             }
         }
+    }
+
+    &__authors {
+        text-align: center;
+        font-size: 0.7rem;
+        margin-top: 5rem;
     }
 }

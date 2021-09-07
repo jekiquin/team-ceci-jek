@@ -20,15 +20,15 @@ class StoryPage extends Component {
     
     componentDidMount() {
         this.background.play();
-        this.background.volume = 0.005;
-        this.gameWin.volume = 0.01;
+        this.background.volume = 0.005;    // 0.005
+        this.gameWin.volume = 0.01;         
         this.gameOver.volume = 0.01;
         this.background.loop = true;
 
         const storyId = this.props.match.params && this.props.match.params.storyId;
         storyId
-        ? storyCalls.nextStory(storyId).then((res) => {this.setState({storyLine: res.data})})
-        : storyCalls.startStory().then((res) => {this.setState({storyLine: res.data})})
+        ? storyCalls.nextStory(storyId).then((res) => {this.setState({storyLine: res.data, isDead: res.data.isDead, isEnd:res.data.isEnd})})
+        : storyCalls.startStory().then((res) => {this.setState({storyLine: res.data, isDead: res.data.isDead, isEnd:res.data.isEnd})})
     }
 
     componentDidUpdate(prevProps) {
@@ -51,6 +51,7 @@ class StoryPage extends Component {
         const {isEnd, isDead} = this.state;
         if (isEnd) {
             this.background.pause();
+            this.buttonSound.pause();
             isDead ? this.gameOver.play() : this.gameWin.play();
         } else {
             this.background.play();
@@ -62,6 +63,8 @@ class StoryPage extends Component {
 
     componentWillUnmount() {
         this.background.pause();
+        this.gameOver.pause();
+        this.gameWin.pause();
     }
 
     handleClick = (option) => {

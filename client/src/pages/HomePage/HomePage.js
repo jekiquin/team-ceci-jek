@@ -26,6 +26,12 @@ class HomePage  extends Component {
                     <p className="homepage__start-button">START GAME</p>
                     <p className="homepage__start-seriously">SERIOUSLY?</p>
                 </Link>
+                <div className="homepage__authors">
+                    <p>Sexy Web Development Firm</p>
+                    <p className="homepage__author">Ceci Martinez</p>
+                    <p className="homepage__author">Jek Iquin</p>
+                </div>
+                
             </main>
         )
     }
