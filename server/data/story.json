@@ -21,13 +21,13 @@
     },
     {
         "id": "2gchskt4q9e8a",
-        "storyline": "As Jojo is running down the street in his boxers he gets attacked by hungry women and drowns in a dogpile of women. Jojo dies",
+        "storyline": "As Jojo is running down the street in his boxers, he gets attacked by hungry women and drowns in a dog pile of women. Jojo dies!",
         "isEnd": true,
         "isDead": true,
         "options": [
             {
                 "toNextId": "2gchskt4q9e88",
-                "description": "Rewind!!",
+                "description": "Rewind!",
                 "isEnd": true,
                 "image": ""
             }
@@ -35,7 +35,7 @@
     },
     {
         "id": "2gchskt4q9e89",
-        "storyline": "Jojo changes into his suit and realizes that there’s stains on his pants. He has no time to clean it up and all of his clothes are in the laundry. ",
+        "storyline": "Jojo changes into his suit and realizes that there’s stains on his pants. He has no time to clean it up and all of his clothes are in the laundry.",
         "isEnd": false,
         "isDead": false,
         "options": [
@@ -75,7 +75,7 @@
     },
     {
         "id": "2gchskt4q9e8d",
-        "storyline": "Jojo's untucked shirt gets caught on the door handle causing him to slip and hitting his head on the doorknob. Jojo dies.",
+        "storyline": "Jojo's untucked shirt gets caught on the door handle causing him to slip and hitting his head on the doorknob. Jojo dies!",
         "isEnd": true,
         "isDead": true,
         "options": [
@@ -90,7 +90,6 @@
     {
         "id": "2gchskt4q9e8c",
         "storyline": "Jojo runs downstairs and stops in the kitchen. He desperately needs coffee to cure his hangover.",
-
         "isEnd": false,
         "isDead": false,
         "options": [
@@ -110,14 +109,13 @@
     },
     {
         "id": "2gchskt4q9e8f",
-        "storyline": "Jojo turns on the coffee pot and it explodes, a shard of glass flies through the air and into his neck. Jojo dies.",
-
+        "storyline": "Jojo turns on the coffee pot and it explodes, a shard of glass flies through the air and into his neck. Jojo dies!",
         "isEnd": true,
         "isDead": true,
         "options": [
             {
                 "toNextId": "2gchskt4q9e88",
-                "description": "Rewind!!",
+                "description": "Rewind!",
                 "isEnd": true,
                 "image": ""
             }
@@ -126,7 +124,6 @@
     {
         "id": "2gchskt4q9e8e",
         "storyline": "Jojo runs out the door and there’s a hungry cat on his porch begging for food.",
-
         "isEnd": false,
         "isDead": false,
         "options": [
@@ -146,14 +143,13 @@
     },
     {
         "id": "2gchskt4q9e8h",
-        "storyline": "It was in fact not a cat, but a feral raccoon. Jojo takes too long looking for food so the raccoon eats him instead. Jojo dies.",
-
+        "storyline": "It was in fact not a cat, but a feral raccoon. Jojo takes too long looking for food so the raccoon eats him instead. Jojo dies!",
         "isEnd": true,
         "isDead": true,
         "options": [
             {
                 "toNextId": "2gchskt4q9e88",
-                "description": "Rewind!!",
+                "description": "Rewind!",
                 "isEnd": true,
                 "image": ""
             }
@@ -162,7 +158,6 @@
     {
         "id": "2gchskt4q9e8g",
         "storyline": "As Jojo is running down the street, he sees a zebra running towards him.",
-
         "isEnd": false,
         "isDead": false,
         "options": [
@@ -182,14 +177,13 @@
     },
     {
         "id": "2gchskt4q9e8i",
-        "storyline": "Jojo takes off his tie and uses it as a rein. He hops on the zebra but it starts going in the wrong direction. Turns out it’s not a zebra, but 2 robbers in a costume. The “zebra” leads him into a dark alleyway where the robbers reveal themselves and demand Jojo’s possessions. Jojo refuses and they attack him. Jojo dies.",
-
+        "storyline": "Jojo takes off his tie and uses it as a rein. He hops on the zebra but it starts going in the wrong direction. Turns out it’s not a zebra, but 2 robbers in a costume. The “zebra” leads him into a dark alleyway where the robbers reveal themselves and demand Jojo’s possessions. Jojo refuses and they attack him. Jojo dies!",
         "isEnd": true,
         "isDead": true,
         "options": [
             {
                 "toNextId": "2gchskt4q9e88",
-                "description": "Rewind!!",
+                "description": "Rewind!",
                 "isEnd": true,
                 "image": ""
             }
@@ -198,7 +192,6 @@
     {
         "id": "2gchskt4q9e8j",
         "storyline": "After safely dodging the zebra, Jojo is running down the sidewalk. There’s a large group of children taking up the entire sidewalk.",
-
         "isEnd": false,
         "isDead": false,
         "options": [
@@ -218,14 +211,13 @@
     },
     {
         "id": "2gchskt4q9e8l",
-        "storyline": "As Jojo steps onto the street there’s an open pothole he doesn’t notice and falls into. Jojo survives the fall into the underground sewage system. As Jojo is thinking “what now?”, a horde of sea monsters come out of the sewage waters and eat him. Jojo dies.",
-
+        "storyline": "As Jojo steps onto the street there’s an open pothole he doesn’t notice and falls into. Jojo survives the fall into the underground sewage system. As Jojo is thinking “what now?”, a horde of sea monsters come out of the sewage waters and eat him. Jojo dies!",
         "isEnd": true,
         "isDead": true,
         "options": [
             {
                 "toNextId": "2gchskt4q9e88",
-                "description": "Rewind!!",
+                "description": "Rewind!",
                 "isEnd": true,
                 "image": ""
             }
@@ -234,7 +226,6 @@
     {
         "id": "2gchskt4q9e8k",
         "storyline": "Jojo is running through the crowd of children when he notices that one of the kids is about to throw his ice cream cone at him.",
-
         "isEnd": false,
         "isDead": false,
         "options": [
@@ -254,14 +245,13 @@
     },
     {
         "id": "2gchskt4q9e8n",
-        "storyline": "As he dodges, another kid kicks him in his crotch and the pain is too. Jojo dies.",
-
+        "storyline": "As he dodges, another kid kicks him in his crotch and the pain is too. Jojo dies!",
         "isEnd": true,
         "isDead": true,
         "options": [
             {
                 "toNextId": "2gchskt4q9e88",
-                "description": "Rewind!!",
+                "description": "Rewind!",
                 "isEnd": true,
                 "image": ""
             }
@@ -270,7 +260,6 @@
     {
         "id": "2gchskt4q9e8m",
         "storyline": "Jojo gets through the crowd of children unscathed and continues his run down the sidewalk. His ex girlfriend walks out of a coffee shop up ahead and stops him.",
-
         "isEnd": false,
         "isDead": false,
         "options": [
@@ -290,14 +279,13 @@
     },
     {
         "id": "2gchskt4q9e8o",
-        "storyline": "As he’s flexing, her new boyfriend walks out and punches Jojo in the face. His muscles are too big. Jojo dies.",
-
+        "storyline": "As he’s flexing, her new boyfriend walks out and punches Jojo in the face. His muscles are too big. Jojo dies!",
         "isEnd": true,
         "isDead": true,
         "options": [
             {
                 "toNextId": "2gchskt4q9e88",
-                "description": "Rewind!!",
+                "description": "Rewind!",
                 "isEnd": true,
                 "image": ""
             }
@@ -306,7 +294,6 @@
     {
         "id": "2gchskt4q9e8p",
         "storyline": "Jojo continues running but his ex is angered by this and runs after him. She’s fast and is gaining on him.",
-
         "isEnd": false,
         "isDead": false,
         "options": [
@@ -326,14 +313,13 @@
     },
     {
         "id": "2gchskt4q9e8q",
-        "storyline": "Jojo falls in love with the librarian and forgets about his job. Jojo dies.",
-
+        "storyline": "Jojo falls in love with the librarian and forgets about his job. Jojo dies!",
         "isEnd": true,
         "isDead": true,
         "options": [
             {
                 "toNextId": "2gchskt4q9e88",
-                "description": "Rewind!!",
+                "description": "Rewind!",
                 "isEnd": true,
                 "image": ""
             }
@@ -342,7 +328,6 @@
     {
         "id": "2gchskt4q9e8r",
         "storyline": "Jojo loses his ex and makes it to the entrance of his building. There’s a crowd of people waiting for the elevator. Jojo’s office is on the 13th floor.",
-
         "isEnd": false,
         "isDead": false,
         "options": [
@@ -362,14 +347,13 @@
     },
     {
         "id": "2gchskt4q9e8t",
-        "storyline": "Jojo skips the line and jumps in the elevator just as it closes behind him. Lightning strikes the building just as he’s about to reach his floor. They have now entered… the twilight zone. Jojo dies.",
-
+        "storyline": "Jojo skips the line and jumps in the elevator just as it closes behind him. Lightning strikes the building just as he’s about to reach his floor. They have now entered… the twilight zone. Jojo dies!",
         "isEnd": true,
         "isDead": true,
         "options": [
             {
                 "toNextId": "2gchskt4q9e88",
-                "description": "Rewind!!",
+                "description": "Rewind!",
                 "isEnd": true,
                 "image": ""
             }
@@ -378,7 +362,6 @@
     {
         "id": "2gchskt4q9e8s",
         "storyline": "Jojo reaches his desk with a minute to spare sweating and panting. His boss comes up and asks what happened to him.",
-
         "isEnd": false,
         "isDead": false,
         "options": [
@@ -399,13 +382,12 @@
     {
         "id": "2gchskt4q9e8u",
         "storyline": "Jojo's boss fires him on the spot for being a horrible person.",
-
         "isEnd": true,
         "isDead": true,
         "options": [
             {
                 "toNextId": "2gchskt4q9e88",
-                "description": "Rewind!!",
+                "description": "Rewind!",
                 "isEnd": true,
                 "image": ""
             }

@@ -10,6 +10,7 @@
     &__heading {
         margin-top: 5rem;
         color: red;
+        text-shadow: 2px 2px white;
     }
 
     &__jojo {
@@ -53,5 +54,12 @@
         text-align: center;
         font-size: 0.7rem;
         margin-top: 5rem;
+        font-size: .75rem;
+    }
+
+    &__firm {
+        color: blue;
+        font-size: 1rem;
+        text-shadow: 2px 2px white;
     }
 }

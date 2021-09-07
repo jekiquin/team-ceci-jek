@@ -20,7 +20,7 @@ class StoryPage extends Component {
     
     componentDidMount() {
         this.background.play();
-        this.background.volume = 0.005;    // 0.005
+        this.background.volume = 0.005;
         this.gameWin.volume = 0.01;         
         this.gameOver.volume = 0.01;
         this.background.loop = true;
@@ -58,7 +58,6 @@ class StoryPage extends Component {
             this.gameOver.pause();
             this.gameWin.pause();
         }
-
     }
 
     componentWillUnmount() {
@@ -86,7 +85,7 @@ class StoryPage extends Component {
     }
 
     render() {
-        const {storyLine, animationRun} = this.state;
+        const {storyLine, animationRun, isEnd} = this.state;
         const storylineHide = animationRun ? 'story-container__storyline--hide' : '';
         
         return !storyLine ? <h1>Loading...</h1> : 
@@ -96,12 +95,11 @@ class StoryPage extends Component {
                 <div className={`story-container__storyline  ${storylineHide}`}>
                     <div className="story-container__text-container">
                         <p className="story-container__text">{storyLine.storyline}</p>
-                        <p className="story-container__text story-container__question">What should Jojo do next?</p>
+                        {!isEnd && <p className="story-container__text story-container__question">What should Jojo do next?</p>}
                     </div>
-                    <div>
+                    <div className="story-container__buttons">
                         {this.optionsLink()}
                     </div>
-  
                 </div>
             </main> )
     }

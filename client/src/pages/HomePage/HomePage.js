@@ -21,17 +21,16 @@ class HomePage  extends Component {
                 {/* <img src="http://localhost:6969/logo/Logo.png" alt="logo" /> */}
                 <h1 className="homepage__heading">Jojo's Adventure</h1>
                 <div className="homepage__jojo"></div>
-                <p>Whatever this is....</p>
+                <p>Tell Jojo what he should do!</p>
                 <Link className="homepage__start" to='/story'> 
                     <p className="homepage__start-button">START GAME</p>
                     <p className="homepage__start-seriously">SERIOUSLY?</p>
                 </Link>
                 <div className="homepage__authors">
-                    <p>Sexy Web Development Firm</p>
+                    <p className="homepage__firm">The Sexy Web Development Firm</p>
                     <p className="homepage__author">Ceci Martinez</p>
                     <p className="homepage__author">Jek Iquin</p>
                 </div>
-                
             </main>
         )
     }
