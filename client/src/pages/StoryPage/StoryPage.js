@@ -13,7 +13,13 @@ class StoryPage extends Component {
         animationImage: null
     }
 
+    audio = new Audio('http://localhost:6969/audio/Electronic_Fantasy.mp3');
+
     componentDidMount() {
+        this.audio.play();
+        this.audio.volume = 0.005;
+        this.audio.loop = true;
+
         const storyId = this.props.match.params && this.props.match.params.storyId;
         storyId
         ? storyCalls.nextStory(storyId).then((res) => {this.setState({storyLine: res.data})})
@@ -35,6 +41,10 @@ class StoryPage extends Component {
             : storyCalls.startStory().then((res) => {this.setState({storyLine: res.data, isDead: res.data.isDead, isEnd: res.data.isEnd, animationRun: false, animationImage: null})});
         }
 
+    }
+
+    componentWillUnmount() {
+        this.audio.pause();
     }
 
     handleClick = (option) => {
