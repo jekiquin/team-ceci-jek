@@ -53,6 +53,7 @@ class StoryPage extends Component {
             this.background.pause();
             this.buttonSound.pause();
             isDead ? this.gameOver.play() : this.gameWin.play();
+            
         } else {
             this.background.play();
             this.gameOver.pause();
